@@ -15,7 +15,7 @@ public class FeedbackService {
 		return feedbackRepository.findAll();
 	}
 	
-	public void saveFeedback() {
-		
+	public void saveFeedback(Feedback feedback) {
+		feedbackRepository.save(feedback);
 	}
 }
